@@ -1,8 +1,14 @@
+<!-- Social Media Link Styles-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <nav class="navbar navbar-dark bg-dark">
   <form class="form-inline">
-    <button class="btn btn-outline-success" type="button">Resume</button>
+    <button class="navbutton btn btn-outline-success" routerLink="/home" 
+    type="button">Home</button>
+    <button class="navbutton btn btn-outline-success" routerLink="/resume" 
+    type="button">Resume</button>
+    <button class="navbutton btn btn-outline-success" routerLink="/blog" 
+    type="button">Blog</button>
   </form>
   
   <div class="row">
@@ -11,18 +17,7 @@
   </div>
 </nav>
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Home</li>
-  </ol>
-</nav>
+<router-outlet></router-outlet>
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="250" alt="Sloth Face" src="/assets/sloth_face.jpg">
-</div>
-<h2 align='center'>You can hire me to make your data work for you! </h2>
 
 

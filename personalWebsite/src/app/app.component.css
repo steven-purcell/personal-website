@@ -1,6 +1,6 @@
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: right;
@@ -9,7 +9,7 @@
 
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
 /* Set a specific color for each brand */
@@ -22,4 +22,10 @@
 /* Github */
 .fa-github {
     color: white;
+  }
+
+/* navbar buttons */
+.navbutton {
+  width: 100px;
+  margin: 5px;
   }
