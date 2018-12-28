@@ -1,31 +1,65 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: inline-block;
+}
+
+.sidenav p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: black;
+  align-self: auto;
+}
+
+.sidenav img {
+  padding: 6px 8px 6px 16px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;  
+}
+
 /* Style all font awesome icons */
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: right;
-    text-decoration: none;
-  }
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.5;
-  }
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  display: inline-block
+}
 
 /* Set a specific color for each brand */
 
 /* LinkedIn */
 .fa-linkedin {
-    color: white;
-  }
+  color: black;
+}
 
 /* Github */
 .fa-github {
-    color: white;
-  }
+  color: black;
+}
 
-/* navbar buttons */
-.navbutton {
-  width: 100px;
-  margin: 5px;
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

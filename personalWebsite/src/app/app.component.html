@@ -1,23 +1,17 @@
 <!-- Social Media Link Styles-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<nav class="navbar navbar-dark bg-dark">
-  <form class="form-inline">
-    <button class="navbutton btn btn-outline-success" routerLink="/home" 
-    type="button">Home</button>
-    <button class="navbutton btn btn-outline-success" routerLink="/resume" 
-    type="button">Resume</button>
-    <button class="navbutton btn btn-outline-success" routerLink="/blog" 
-    type="button">Blog</button>
-  </form>
-  
-  <div class="row">
-    <a href="https://www.linkedin.com/in/steven-purcell-b1106142/" class="fa fa-linkedin"></a>
-    <a href="https://github.com/steven-purcell" class="fa fa-github"></a>
-  </div>
-</nav>
+<div class="sidenav">
+  <img width="50" alt="Sloth Face" src="/assets/sloth_face.jpg">
+  <p>I provide insight from data and build services to take advantage of that data. 
+    Attention grabbing visuals, accurate predictions, and insightful statistical analysis are vital 
+    business tools. I have experience building machine learning toolkits and analytical tools 
+    to inform decision-making and create predictions engines. 
+  </p>
+  <a href="https://www.linkedin.com/in/steven-purcell-b1106142/" class="fa fa-linkedin"></a>
+  <a href="https://github.com/steven-purcell" class="fa fa-github"></a>
+</div>
 
-<router-outlet></router-outlet>
-
-
-
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
