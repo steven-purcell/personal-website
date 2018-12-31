@@ -6,6 +6,7 @@ import { ShowResumeComponent } from './show-resume/show-resume.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
+    ChartsModule,
     RouterModule.forRoot([
       {
       path: '',
