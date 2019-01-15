@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
+import { EasyPieChartModule } from 'ng2modules-easypiechart';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -14,7 +18,14 @@ import { ChartsModule } from 'ng2-charts';
     HomeComponent,
     BlogComponent
   ],
+  exports: [
+    EasyPieChartModule
+  ],
   imports: [
+    EasyPieChartModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     BrowserModule,
     ChartsModule,
     RouterModule.forRoot([
