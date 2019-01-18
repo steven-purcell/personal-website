@@ -1,18 +1,29 @@
-<h1 align="center">What I Do</h1>
+<header class="main-header" role="banner">
+    <img src="\assets\nature-rock-mountain-snow-winter-cloud-1045544(2).jpg" height="150" width="100%" alt="Banner Image"/>
+  </header>
 
 <div class="container">
+    <h1 align="center">What I Work on Daily</h1>
     <canvas baseChart
         [data]="doughnutChartData"
         [labels]="doughnutChartLabels"
         [chartType]="doughnutChartType"
         [options]="doughnutChartOptions">
     </canvas>
-</div>
 
-<div id="container">
-    <div class="chart"><easy-pie-chart [percent]="percent1" [options]="options"></easy-pie-chart></div>
+    <h2 align="center">Skill Mastery</h2>
+    <div class="pie-label">{{skill1}}</div>
+    <div class="chart">
+        <easy-pie-chart [percent]="percent1" [options]="options"></easy-pie-chart>
+    </div>
+    
+    <div class="pie-label">{{skill2}}</div>
+    <div class="chart">
+        <easy-pie-chart [percent]="percent2" [options]="options"></easy-pie-chart>
+    </div>
 
-    <div class="chart"><easy-pie-chart [percent]="percent2" [options]="options"></easy-pie-chart></div>
-
-    <div class="chart"><easy-pie-chart [percent]="percent3" [options]="options"></easy-pie-chart></div>
+    <div class="pie-label">{{skill3}}</div>
+    <div class="chart">
+        <easy-pie-chart [percent]="percent3" [options]="options"></easy-pie-chart>
+    </div>
 </div>
