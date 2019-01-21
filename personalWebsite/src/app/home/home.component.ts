@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   
   constructor() {
     this.percent1 = 40;
-    this.percent2 = 35;
+    this.percent2 = 25;
     this.percent3 = 45;
     this.skill1 = "Python";
     this.skill2 = "Angular 7";
