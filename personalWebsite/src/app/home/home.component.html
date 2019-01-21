@@ -2,8 +2,10 @@
     <img src="\assets\nature-rock-mountain-snow-winter-cloud-1045544(2).jpg" height="150" width="100%" alt="Banner Image"/>
   </header>
 
+<body>
+
 <div class="container">
-    <h1 align="center">Typical Day</h1>
+    <h1 align="center">Professional Duties</h1>
     <canvas baseChart
         [data]="doughnutChartData"
         [labels]="doughnutChartLabels"
@@ -11,7 +13,15 @@
         [options]="doughnutChartOptions">
     </canvas>
 
-    <h2 align="center">Professional Skills</h2>
+    <h1 align="center">Hobbies and Activities</h1>
+    <canvas baseChart
+        [data]="polarChartData"
+        [labels]="polarChartLabels"
+        [chartType]="polarChartType"
+        [options]="polarChartOptions">
+    </canvas>
+
+    <h1 align="center">Professional Skills</h1>
     <div class="pie-label">{{skill1}}</div>
     <div class="chart">
         <easy-pie-chart [percent]="percent1" [options]="options"></easy-pie-chart>
@@ -27,3 +37,4 @@
         <easy-pie-chart [percent]="percent3" [options]="options"></easy-pie-chart>
     </div>
 </div>
+</body>

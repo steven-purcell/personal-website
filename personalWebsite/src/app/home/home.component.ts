@@ -15,14 +15,22 @@ export class HomeComponent implements OnInit {
   public skill3: string;
   public options: any;
 
+// Doughnut Chart
   public doughnutChartLabels = ['Data Science', 'Machine Learning Development', 'Back-End Development',
-                                'Front-End Development', 'Rock Climbing', 'Video Games'];
-  public doughnutChartData = [4, 3, 2, 2, 1, 1];
+                                'Front-End Development'];
+  public doughnutChartData = [5, 3, 2, 1];
   public doughnutChartType = 'doughnut';
   public doughnutChartOptions = {cutoutPercentage:50, legend: {display: false}, tooltips: {
-    callbacks: {afterLabel: (item) => `(hours)`}
+    callbacks: {}
   }};
-  
+
+// PolarArea Chart
+public polarChartLabels = ['Rock Climbing', 'Backpacking', 'Coding', 'Video Games', 'Reading'];
+public polarChartData = [4, 9, 8, 6, 10];
+public polarChartType = 'polarArea';
+public polarChartOptions = {};
+
+// Gauge Custer
   constructor() {
     this.percent1 = 40;
     this.percent2 = 25;
@@ -35,8 +43,8 @@ export class HomeComponent implements OnInit {
         var ctx = this.renderer.getCtx();
         var canvas = this.renderer.getCanvas();
         var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
-            gradient.addColorStop(0, "#FFFF00");
-            gradient.addColorStop(1, "#008000");
+            gradient.addColorStop(0, "#FFF000");
+            gradient.addColorStop(1, "#F00000");
         return gradient;},
       trackColor: 'transparent',
       scaleColor: 'transparent',

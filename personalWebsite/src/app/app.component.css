@@ -1,6 +1,9 @@
-/* nav {
-  position: fixed;
-} */
+.sidenav h4 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 35px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .sidenav {
   height: 100%;
@@ -21,10 +24,6 @@
   font-size: 20px;
   color: black;
   display: inline-block;
-}
-
-.sidenav h4 {
-  margin-left: 35px;
 }
 
 .sidenav p {
@@ -53,11 +52,10 @@
   padding: 10px;
   font-size: 30px;
   width: 50px;
-  display: inline-block
+  display: inline-block;
 }
 
 /* Set a specific color for each brand */
-
 /* LinkedIn */
 .fa-linkedin {
   color: black;
