@@ -9,14 +9,12 @@ import { EasyPieChartModule } from 'ng2modules-easypiechart';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
 import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    BlogComponent
+    HomeComponent
   ],
   exports: [
     EasyPieChartModule
@@ -37,11 +35,6 @@ import { ChartsModule } from 'ng2-charts';
       {
         path: 'home',
         component: HomeComponent,
-        pathMatch: 'full'
-      },
-      {
-        path: 'blog',
-        component: BlogComponent,
         pathMatch: 'full'
       }
     ])
